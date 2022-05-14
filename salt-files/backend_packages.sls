@@ -1,4 +1,6 @@
-backend_packages:
+packages_setup:
   pkg.installed:
-    - pkgs: 
-	-git
+    - pkgs:
+      - nginx
+      - git
+      - zsh
