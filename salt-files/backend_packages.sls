@@ -4,3 +4,5 @@ packages_setup:
       - nginx
       - git
       - zsh
+      - gcc
+      - gcc-c++
