@@ -6,3 +6,6 @@ packages_setup:
       - zsh
       - gcc
       - gcc-c++
+      - cmake
+      - make
+      
