@@ -8,4 +8,3 @@ packages_setup:
       - gcc-c++
       - cmake
       - make
-      
