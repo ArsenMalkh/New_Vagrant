@@ -19,13 +19,11 @@ Vagrant.configure("2") do |config|
 
   config.vm.network "forwarded_port", guest: 80, host: 8080, host_ip: "127.0.0.1"
 
-
-  config.vm.provision "shell", inline: <<-SHELL
-     apt-get update
-     apt-get install -y apache2
-     apt-get install nlohmann-json-dev
-     apt-get install -y gcc-c++ cmake3 make rpm-build valgrind pam-devel ncurses-devel openssl-devel 
-   SHELL
+  # config.vm.provision "shell", inline: <<-SHELL
+  #   apt-get update
+  #   apt-get install -y apache2
+  # SHELL
+  #config.vm.synced_folder "salt", "/srv/salt/"
   
   config.vm.provision :salt do |salt|
 		salt.masterless = false
